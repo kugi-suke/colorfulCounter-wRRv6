@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+  }
+
+.App2 {
+  text-align: center;
+}
+
+.App3 {
+  text-align: center;
+}
+
+  .App-counter {
+    background-color: #e75959;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 4vmin);
+    color: white;
+  }
+
+  .App2-counter {
+    background-color: #59bae7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 4vmin);
+    color: white;
+  }
+
+  .App3-counter {
+    background-color: #b5e759;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 4vmin);
+    color: white;
+  }
+
+  button {
+    margin: 0 5px;
+    padding: 10px;
+    width: 200px;
+    font-size: calc(10px + 4vmin);
+    border-radius: 10px;
+  }
