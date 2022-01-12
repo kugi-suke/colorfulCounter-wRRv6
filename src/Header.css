@@ -1,4 +1,12 @@
 .Header {
     text-align: center;
     background-color: #e76d09;
+    padding: 1rem;
   }
+
+.Nav {
+    text-align: center;
+    background-color: #a3c5ec;
+    border-bottom: solid 1px;
+    padding: 0.5rem;
+}
