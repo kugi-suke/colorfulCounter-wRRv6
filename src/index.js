@@ -1,18 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import App2 from "./routes/App2";
+import App3 from "./routes/App3";
+import Header from "./Header.js"
 
-class Index extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>KillerNews.net</h1>
-                {/* {this.props.children} */}
-                <Link to="/">red counter</Link>,
-                <Link to="/blue">blue counter</Link>,
-                <Link to="/yellow">yellow counter</Link>
-            </div>
-        );
-    }
-}
-
-export default Index;
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+    <BrowserRouter>
+        <Header />
+        <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="blue" element={<App2 />} />
+            <Route path="yellow" element={<App3 />} />
+        </Routes>
+    </BrowserRouter>
+,rootElement);
