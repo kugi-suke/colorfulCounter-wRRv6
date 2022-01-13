@@ -34,4 +34,3 @@ App.defaultProps = {
 };
 
 export default App;
-export const UserCount = React.createContext();
