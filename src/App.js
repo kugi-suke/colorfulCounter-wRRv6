@@ -1,27 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import './App.css';
 
 type Props = {
   initialCount: number,
-  initialText: string,
 };
 
-function App({ initialCount, initialText }: Props) {
+function App({ initialCount }: Props) {
   const [count, setCount] = useState(initialCount);
   const [definedCount, setDefCount] = useState(initialCount);
-  const [text, setText] = useState(initialText);
-
-  useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/todos/' + count)
-        .then(res => {
-            setText(res.data.title)
-        })
-        .catch(() => {
-            setText(initialText)
-            console.log('ERROR! jsonplaceholder has 1~200 data...')
-        })
-    });
 
   return (
     <div className="App" data-test="component-app">
@@ -38,10 +24,6 @@ function App({ initialCount, initialText }: Props) {
           <button className="submitButton" type="submit" onClick={() => setCount(+definedCount)}>Set Count</button>
         </div>
       </div>
-      <div className="Todos">
-          <p>from jsonplaceholeder/todos</p>
-          <p>{text}</p>
-      </div>
     </div>
   );
 };
@@ -49,7 +31,7 @@ function App({ initialCount, initialText }: Props) {
 
 App.defaultProps = {
   initialCount: 0,
-  initialText: "",
 };
 
 export default App;
+export const UserCount = React.createContext();

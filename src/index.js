@@ -5,7 +5,8 @@ import "./index.css";
 import App from "./App";
 import App2 from "./routes/App2";
 import App3 from "./routes/App3";
-import Header from "./Header.js"
+import Header from "./Header.js";
+import Footer from "./Footer.js";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -16,5 +17,6 @@ ReactDOM.render(
             <Route path="blue" element={<App2 />} />
             <Route path="yellow" element={<App3 />} />
         </Routes>
+        <Footer />
     </BrowserRouter>
 ,rootElement);
