@@ -12,7 +12,7 @@
 
   .App-counter {
     background-color: #e75959;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
 
   .App2-counter {
     background-color: #59bae7;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@
 
   .App3-counter {
     background-color: #b5e759;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,4 +49,28 @@
     width: 200px;
     font-size: calc(10px + 4vmin);
     border-radius: 10px;
+  }
+
+  button.submitButton {
+    margin: 0 5px;
+    padding: 10px;
+    width: 150px;
+    font-size: calc(5px + 2vmin);
+    border-radius: 10px;
+  }
+
+  input {
+    margin: 0 5px;
+    padding: 10px;
+    width: 150px;
+    font-size: calc(5px + 2vmin);
+  }
+
+  .Submit-form {
+    padding: 20px;
+  }
+
+  .Todos {
+    background-color: black;
+    color: white;
   }
